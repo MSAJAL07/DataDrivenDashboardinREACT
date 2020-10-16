@@ -1,4 +1,4 @@
-### It is a data-driven dashboard which includes world cloud, pagination,filtering,andsorting of data
+### It is a data-driven dashboard which includes world cloud, pagination, filtering, and sorting of data
 
 
 
