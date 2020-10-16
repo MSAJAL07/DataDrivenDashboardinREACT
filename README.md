@@ -1,3 +1,14 @@
+### It is a data-driven dashboard which includes world cloud, pagination,filtering,andsorting of data
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
