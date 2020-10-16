@@ -1,0 +1,241 @@
+/* menu */
+#menu {
+    position: fixed;
+    z-index: 5;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 1.2rem 0.25rem rgba(12, 97, 224, 0.2);
+    background-color: rgb(241, 245, 246);
+    transition: ease all 0.3s;
+  }
+  
+  #menu:hover {
+    background-color: #6c757d;
+  }
+  
+  #menu:hover .menu_ico {
+    color: white !important;
+  }
+  
+  .clicked_menu {
+    right: 350px !important;
+  }
+  
+  .clicked_menu .menu_ico {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  
+  #menu .circle {
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+  }
+  
+  .menu_ico {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #7d7d7d;
+    transform: translate(-50%, -50%);
+    transition: ease all 0.3s 0.2s;
+  }
+
+  #shadow_deviation {
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.1));
+    display: block;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #deviation_container p {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  
+  #deviation_container {
+    display: block;
+    z-index: 3;
+    width: 600px;
+    background-color: #b1b1b1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 2px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+  }
+  #deviation_container p{
+    margin-bottom: 0px;
+    color: white;
+  }
+
+  .cell {
+    cursor: pointer;
+}
+
+.tooltipbackground {
+    background-color: #0d0d0f;
+}
+
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+    visibility: visible;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    min-width: 120px;
+    width: 300px;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -140px;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip1:hover .tooltiptext {
+    visibility: visible;
+}
+
+.list-unstyled li{
+    float: left;
+
+}
+
+#cloud_div-wrapper{
+    position: absolute !important;
+    top: 50px;
+}
+
+#sidebar_main {
+  position: fixed;
+  top: 0px;
+  right: -400px;
+  width: 400px;
+  z-index: 4;
+  transition: ease all 300ms !important;
+  background-color: #f7f7f7;
+  padding: 15px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+  
+   
+
+/* .navbar {
+    overflow: hidden;
+    background-color: #c3c0c0;
+    position: fixed;
+    top: 0;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+  } */
+  
+  /* .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+/*   
+  .navbar p:hover {
+    background: rgb(14, 13, 13);
+    color: black;
+  }
+   */
+  /* .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used in this example to enable scrolling }*/
+   .toobar{
+     position: fixed;
+     width : 100%;
+     background-color: rgb(166, 184, 236);
+   }
+   .toolbar_nav{
+     display: flex;
+   }
+   .toobar_nav_item ul{
+     list-style: none;
+     margin:0;
+     padding: 0;
+     display: flex;
+   }
+   .side_bar {
+    height: 100%;
+    background: rgb(239, 243, 243);
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    max-width: 350px;
+    z-index: 200;
+    transform: translateX(200%);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .open {
+    transform: translateX(0);
+  }
+  .white{
+    background-color: white;
+}
+
+
+table-box {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.table-box .table-detail {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* Card Box */
+.card-box {
+  
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-clip: padding-box;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  min-height: 80px;
+}
+.card-box .card-drop {
+  color: #98a6ad;
+  font-size: 20px;
+  line-height: 1px;
+  padding: 0px 5px;
+  display: inline-block;
+}
